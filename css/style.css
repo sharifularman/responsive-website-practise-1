@@ -200,3 +200,42 @@ nav .nav-links{
     color: rgb(238, 115, 135);
     margin: 0 5px;
 }
+/* bottom style ends */
+
+/* media query for responsive website */
+
+/* for mobile device */
+
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+       justify-content: center;
+       
+    }
+    .player, .blogs, .course{
+        flex-direction: column;
+    }
+    .courses{
+      margin-left: 120px;
+    }
+    
+}
+    /* for tablet device */
+    @media only screen and (min-width:688px) and (max-width:992px){
+        .container{
+            width: 100%;
+        }
+        .players, .blogs, .courses{
+            grid-template-columns: repeat(2, 1fr);
+           justify-content: center;
+          
+           
+        }
+        .player, .blogs, .course{
+            flex-direction: column;
+        }  
+        
+    }
